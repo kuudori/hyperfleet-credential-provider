@@ -1,13 +1,8 @@
 approvers:
-- kuudori
-- ma-hill
-- Ruclo
-- yasun1
-- yingzhanredhat
-
+- platform-owners
+- tech-leads
 reviewers:
-- kuudori
-- ma-hill
-- Ruclo
-- yasun1
-- yingzhanredhat
+- platform-reviewers
+- platform-owners
+labels:
+- area/platform
