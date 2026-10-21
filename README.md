@@ -383,13 +383,17 @@ podman run --rm \
 
 ### Prerequisites
 
-- Go 1.26+
+- Go 1.26.0 (the pinned golangci-lint does not support Go 1.27; on newer toolchains, prefix commands with `GOTOOLCHAIN=go1.26.0`)
 - Podman or Docker
 - Make
+- [pre-commit](https://pre-commit.com/#install)
 
 ### Building
 
 ```bash
+# One-time: install the git hooks (secret scanning, commitlint, linting, file hygiene)
+make install-hooks
+
 # Build binary
 make build
 
